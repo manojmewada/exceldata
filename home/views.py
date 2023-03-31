@@ -25,3 +25,5 @@ def index(request):
             excel_data.append(row_data)
     return render(request, 'index.html', {"excel_data":excel_data})
 
+def page_not_found(request,exception):
+    return render(request,'pagenotfound.html')
